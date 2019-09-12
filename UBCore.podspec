@@ -24,9 +24,9 @@ Pod::Spec.new do |spec|
   
   spec.platform     = :ios, "10.0"
 
-  spec.source =  { :git => 'https://github.com/levanShost/UBCore.git', :tag => spec.version }
+  spec.source =  { :git => 'https://github.com/unitbean/iOSCore.git', :tag => spec.version }
 
-  spec.source_files  = "UBCore", "UBCore/**/*.{swift,h,m}"
+  spec.source_files  = "UBCore", "UBCore/*.{swift,h,m}"
 
   spec.exclude_files = "UBCore/UBCore/UBCore-umbrella.h"
 
