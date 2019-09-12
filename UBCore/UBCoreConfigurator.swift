@@ -1,5 +1,5 @@
 //
-//  UBCore.swift
+//  UBCoreConfigurator.swift
 //  UBCore
 //
 //  Created by Леван Чикваидзе on 11/09/2019.

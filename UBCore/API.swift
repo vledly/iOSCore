@@ -1,5 +1,5 @@
 //
-//  BaseAPI.swift
+//  API.swift
 //  Core
 //
 //  Created by Леван Чикваидзе on 05/09/2019.
@@ -18,7 +18,7 @@ extension API {
     public var sampleData: Data { return Data() }
     
     var host: String {
-        return UBCore.host
+        return UBCoreConfigurator.host
     }
     
     public var baseURL: URL {

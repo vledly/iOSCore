@@ -25,7 +25,7 @@
 		74AE68272328EEEB00BE93C7 /* ReachabilityTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AE68262328EEEB00BE93C7 /* ReachabilityTypes.swift */; };
 		74AE68292328EF6700BE93C7 /* NetworkStackTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AE68282328EF6700BE93C7 /* NetworkStackTypes.swift */; };
 		74AE682B2328F1AB00BE93C7 /* UBCoreConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AE682A2328F1AB00BE93C7 /* UBCoreConfiguration.swift */; };
-		74AE682D2328F95800BE93C7 /* UBCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AE682C2328F95800BE93C7 /* UBCore.swift */; };
+		74AE682D2328F95800BE93C7 /* UBCoreConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AE682C2328F95800BE93C7 /* UBCoreConfigurator.swift */; };
 		AE15BFD99F870720D44534C5 /* Pods_UBCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 119EB8003A03B642DC720462 /* Pods_UBCore.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,7 +53,7 @@
 		74AE68262328EEEB00BE93C7 /* ReachabilityTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityTypes.swift; sourceTree = "<group>"; };
 		74AE68282328EF6700BE93C7 /* NetworkStackTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkStackTypes.swift; sourceTree = "<group>"; };
 		74AE682A2328F1AB00BE93C7 /* UBCoreConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UBCoreConfiguration.swift; sourceTree = "<group>"; };
-		74AE682C2328F95800BE93C7 /* UBCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UBCore.swift; sourceTree = "<group>"; };
+		74AE682C2328F95800BE93C7 /* UBCoreConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UBCoreConfigurator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,7 +117,7 @@
 				74AE68242328EE7300BE93C7 /* DAOTypes.swift */,
 				74AE68262328EEEB00BE93C7 /* ReachabilityTypes.swift */,
 				74AE682A2328F1AB00BE93C7 /* UBCoreConfiguration.swift */,
-				74AE682C2328F95800BE93C7 /* UBCore.swift */,
+				74AE682C2328F95800BE93C7 /* UBCoreConfigurator.swift */,
 			);
 			path = UBCore;
 			sourceTree = "<group>";
@@ -239,7 +239,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74AE682D2328F95800BE93C7 /* UBCore.swift in Sources */,
+				74AE682D2328F95800BE93C7 /* UBCoreConfigurator.swift in Sources */,
 				742EA62A2326975D00163BE9 /* RealmConfigurationExtension.swift in Sources */,
 				74AE68292328EF6700BE93C7 /* NetworkStackTypes.swift in Sources */,
 				742EA62E2326975D00163BE9 /* NetworkResponse.swift in Sources */,
