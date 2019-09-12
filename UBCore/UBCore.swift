@@ -7,7 +7,7 @@
 //
 
 
-public class UBCore {
+public class UBCoreConfigurator {
     
     private static var configHost: String?
     
@@ -22,7 +22,7 @@ public class UBCore {
         }
     }
     
-    open class func initialize(with config: UBCoreConfiguration) {
+    open class func configure(with config: UBCoreConfiguration) {
         configHost = config.host
     }
 

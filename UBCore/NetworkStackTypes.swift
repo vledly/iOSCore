@@ -9,7 +9,7 @@
 import Moya
 
 
-public typealias Provider<T: TargetType> = MoyaProvider<T>
+public typealias NetworkProvider<T: TargetType> = MoyaProvider<T>
 public typealias Task = Moya.Task
 public typealias Method = Moya.Method
 public typealias URLEncoding = Moya.URLEncoding
