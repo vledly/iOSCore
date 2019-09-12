@@ -14,9 +14,7 @@ public struct APIProvider<EndPointType: TargetType> {
     private let provider: MoyaProvider<EndPointType>
     private let reachability: Reachability? = Reachability()
     
-    public init(
-        provider: MoyaProvider<EndPointType>
-    ) {
+    public init(provider: MoyaProvider<EndPointType>) {
         self.provider = provider
     }
     

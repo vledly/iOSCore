@@ -9,4 +9,8 @@
 
 public struct UBCoreConfiguration {
     public var host: String
+    
+    public init(host: String) {
+        self.host = host
+    }
 }
