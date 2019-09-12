@@ -10,7 +10,7 @@ Pod::Spec.new do |spec|
 
   spec.name         = "UBCore"
 
-  spec.version      = "1.0.2"
+  spec.version      = "1.0.0"
 
   spec.summary      = "UnitBean iOS Core Framework."
   
