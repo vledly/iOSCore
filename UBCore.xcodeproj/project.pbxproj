@@ -401,6 +401,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.1;
 				MODULEMAP_FILE = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.unitbean.Core;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -429,6 +430,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.1;
 				MODULEMAP_FILE = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.unitbean.Core;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
