@@ -14,7 +14,9 @@ public struct APIProvider<EndPointType: TargetType> {
     private let provider: MoyaProvider<EndPointType>
     private let reachability: Reachability? = Reachability()
     
-    public init(provider: MoyaProvider<EndPointType>) {
+    public init(
+        provider: MoyaProvider<EndPointType>
+    ) {
         self.provider = provider
     }
     
@@ -28,7 +30,7 @@ public struct APIProvider<EndPointType: TargetType> {
             
             switch response {
             case let .success(data):
-                guard let successResponse = try? data.filter(statusCodes: 200...299) else {
+                guard let successResponse = try? data.filterSuccessfulStatusCodes() else {
                         self.handlerErrorResponse(
                             data: data,
                             repeatEndPoint: endPoint,
@@ -61,8 +63,16 @@ public struct APIProvider<EndPointType: TargetType> {
         completion: @escaping (Result<ResponseType, Error>) -> Void
     ) {
         guard let responseModel = try? data.map(ResponseType.self) else {
+            do {
+                let string = try data.mapString()
+                ResponseType.self == String.self
+                    ? completion(.success(string as! ResponseType))
+                    : completion(.failure(CoreNetworkError.serialization))
+            } catch {
                 completion(.failure(CoreNetworkError.serialization))
-                return
+            }
+            
+            return
         }
         
         completion(.success(responseModel))
@@ -74,10 +84,12 @@ public struct APIProvider<EndPointType: TargetType> {
         completion: @escaping (Result<ResponseType, Error>) -> Void
     ) {
         switch data.statusCode {
-        case 400, 401, 403:
-            guard let responseModel = try? data.map(ResponseType.self) else {
-                    completion(.failure(CoreNetworkError.serialization))
-                    return
+        case 400...499:
+            guard
+                let responseModel = try? data.map(ResponseType.self)
+            else {
+                completion(.failure(CoreNetworkError.server(code: data.statusCode)))
+                return
             }
             
             completion(.success(responseModel))
