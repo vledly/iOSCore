@@ -8,18 +8,18 @@
 
 
 public protocol RequestResultHandler {
-    associatedtype ResultType: Decodable
     
     func handleDomainErrors(
         errors: [ServerError],
-        completion:  (Result<ResultType, Error>) -> Void
+        completion: (Error) -> Void
     )
+    
 }
 
 
 extension RequestResultHandler {
     
-    public func handleRequestResultClosure(
+    public func handleRequestResultClosure<ResultType: Decodable>(
         _ result: Result<NetworkResponse<ResultType>, Error>,
         completion: (Result<ResultType, Error>) -> Void
     ) {
@@ -29,7 +29,9 @@ extension RequestResultHandler {
             case (let .some(resultModel), .none):
                 completion(.success(resultModel))
             case (_, let .some(errors)):
-                handleDomainErrors(errors: errors, completion: completion)
+                handleDomainErrors(errors: errors) {
+                    completion(.failure($0))
+                }
             default: break
                 
             }
