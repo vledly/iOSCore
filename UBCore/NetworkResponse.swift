@@ -7,7 +7,7 @@
 //
 
 
-public struct NetworkResponse<T: Decodable>: Decodable {
+public class NetworkResponse<T: Decodable>: Decodable {
     public let errors  : [ServerError]?
     public let result  : T?
 }
