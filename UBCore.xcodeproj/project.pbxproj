@@ -27,6 +27,10 @@
 		74AE682B2328F1AB00BE93C7 /* UBCoreConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AE682A2328F1AB00BE93C7 /* UBCoreConfiguration.swift */; };
 		74AE682D2328F95800BE93C7 /* UBCoreConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AE682C2328F95800BE93C7 /* UBCoreConfigurator.swift */; };
 		AE15BFD99F870720D44534C5 /* Pods_UBCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 119EB8003A03B642DC720462 /* Pods_UBCore.framework */; };
+		CC0810A7234E0C48009DA29A /* JSONSerializationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0810A6234E0C48009DA29A /* JSONSerializationExtension.swift */; };
+		CC0810A9234E134C009DA29A /* HTTPLoggerPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0810A8234E134C009DA29A /* HTTPLoggerPlugin.swift */; };
+		CC0810AB234E1EE6009DA29A /* HTTPDataStringifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0810AA234E1EE6009DA29A /* HTTPDataStringifier.swift */; };
+		CC0810AD234E2077009DA29A /* HTTPJSONDataStringifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0810AC234E2077009DA29A /* HTTPJSONDataStringifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +58,10 @@
 		74AE68282328EF6700BE93C7 /* NetworkStackTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkStackTypes.swift; sourceTree = "<group>"; };
 		74AE682A2328F1AB00BE93C7 /* UBCoreConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UBCoreConfiguration.swift; sourceTree = "<group>"; };
 		74AE682C2328F95800BE93C7 /* UBCoreConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UBCoreConfigurator.swift; sourceTree = "<group>"; };
+		CC0810A6234E0C48009DA29A /* JSONSerializationExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONSerializationExtension.swift; sourceTree = "<group>"; };
+		CC0810A8234E134C009DA29A /* HTTPLoggerPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPLoggerPlugin.swift; sourceTree = "<group>"; };
+		CC0810AA234E1EE6009DA29A /* HTTPDataStringifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPDataStringifier.swift; sourceTree = "<group>"; };
+		CC0810AC234E2077009DA29A /* HTTPJSONDataStringifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPJSONDataStringifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +126,10 @@
 				74AE68262328EEEB00BE93C7 /* ReachabilityTypes.swift */,
 				74AE682A2328F1AB00BE93C7 /* UBCoreConfiguration.swift */,
 				74AE682C2328F95800BE93C7 /* UBCoreConfigurator.swift */,
+				CC0810A6234E0C48009DA29A /* JSONSerializationExtension.swift */,
+				CC0810AA234E1EE6009DA29A /* HTTPDataStringifier.swift */,
+				CC0810AC234E2077009DA29A /* HTTPJSONDataStringifier.swift */,
+				CC0810A8234E134C009DA29A /* HTTPLoggerPlugin.swift */,
 			);
 			path = UBCore;
 			sourceTree = "<group>";
@@ -245,9 +257,13 @@
 				742EA62E2326975D00163BE9 /* NetworkResponse.swift in Sources */,
 				742EA62D2326975D00163BE9 /* APIProvider.swift in Sources */,
 				742EA6312326975D00163BE9 /* RequestResultHandler.swift in Sources */,
+				CC0810AD234E2077009DA29A /* HTTPJSONDataStringifier.swift in Sources */,
 				742EA6302326975D00163BE9 /* CoreNetworkError.swift in Sources */,
 				74AE682B2328F1AB00BE93C7 /* UBCoreConfiguration.swift in Sources */,
+				CC0810A7234E0C48009DA29A /* JSONSerializationExtension.swift in Sources */,
+				CC0810A9234E134C009DA29A /* HTTPLoggerPlugin.swift in Sources */,
 				742EA62C2326975D00163BE9 /* EncodableExtension.swift in Sources */,
+				CC0810AB234E1EE6009DA29A /* HTTPDataStringifier.swift in Sources */,
 				74AE68252328EE7300BE93C7 /* DAOTypes.swift in Sources */,
 				74AE68272328EEEB00BE93C7 /* ReachabilityTypes.swift in Sources */,
 				742EA6322326975D00163BE9 /* API.swift in Sources */,
