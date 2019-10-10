@@ -26,6 +26,11 @@
 		74AE68292328EF6700BE93C7 /* NetworkStackTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AE68282328EF6700BE93C7 /* NetworkStackTypes.swift */; };
 		74AE682B2328F1AB00BE93C7 /* UBCoreConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AE682A2328F1AB00BE93C7 /* UBCoreConfiguration.swift */; };
 		74AE682D2328F95800BE93C7 /* UBCoreConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AE682C2328F95800BE93C7 /* UBCoreConfigurator.swift */; };
+		74E07212234F035500CC569D /* DefaultsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E07211234F035500CC569D /* DefaultsStorage.swift */; };
+		74E07214234F035F00CC569D /* Synchronizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E07213234F035F00CC569D /* Synchronizer.swift */; };
+		74E07216234F059700CC569D /* KVStorageKeyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E07215234F059700CC569D /* KVStorageKeyContainer.swift */; };
+		74E07218234F0A1F00CC569D /* UpdatableEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E07217234F0A1F00CC569D /* UpdatableEntity.swift */; };
+		74E0721A234F0A4600CC569D /* CountedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E07219234F0A4600CC569D /* CountedList.swift */; };
 		AE15BFD99F870720D44534C5 /* Pods_UBCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 119EB8003A03B642DC720462 /* Pods_UBCore.framework */; };
 		CC0810A7234E0C48009DA29A /* JSONSerializationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0810A6234E0C48009DA29A /* JSONSerializationExtension.swift */; };
 		CC0810A9234E134C009DA29A /* HTTPLoggerPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0810A8234E134C009DA29A /* HTTPLoggerPlugin.swift */; };
@@ -58,6 +63,11 @@
 		74AE68282328EF6700BE93C7 /* NetworkStackTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkStackTypes.swift; sourceTree = "<group>"; };
 		74AE682A2328F1AB00BE93C7 /* UBCoreConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UBCoreConfiguration.swift; sourceTree = "<group>"; };
 		74AE682C2328F95800BE93C7 /* UBCoreConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UBCoreConfigurator.swift; sourceTree = "<group>"; };
+		74E07211234F035500CC569D /* DefaultsStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultsStorage.swift; sourceTree = "<group>"; };
+		74E07213234F035F00CC569D /* Synchronizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Synchronizer.swift; sourceTree = "<group>"; };
+		74E07215234F059700CC569D /* KVStorageKeyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KVStorageKeyContainer.swift; sourceTree = "<group>"; };
+		74E07217234F0A1F00CC569D /* UpdatableEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdatableEntity.swift; sourceTree = "<group>"; };
+		74E07219234F0A4600CC569D /* CountedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountedList.swift; sourceTree = "<group>"; };
 		CC0810A6234E0C48009DA29A /* JSONSerializationExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONSerializationExtension.swift; sourceTree = "<group>"; };
 		CC0810A8234E134C009DA29A /* HTTPLoggerPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPLoggerPlugin.swift; sourceTree = "<group>"; };
 		CC0810AA234E1EE6009DA29A /* HTTPDataStringifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPDataStringifier.swift; sourceTree = "<group>"; };
@@ -126,6 +136,11 @@
 				74AE68262328EEEB00BE93C7 /* ReachabilityTypes.swift */,
 				74AE682A2328F1AB00BE93C7 /* UBCoreConfiguration.swift */,
 				74AE682C2328F95800BE93C7 /* UBCoreConfigurator.swift */,
+				74E07213234F035F00CC569D /* Synchronizer.swift */,
+				74E07211234F035500CC569D /* DefaultsStorage.swift */,
+				74E07215234F059700CC569D /* KVStorageKeyContainer.swift */,
+				74E07217234F0A1F00CC569D /* UpdatableEntity.swift */,
+				74E07219234F0A4600CC569D /* CountedList.swift */,
 				CC0810A6234E0C48009DA29A /* JSONSerializationExtension.swift */,
 				CC0810AA234E1EE6009DA29A /* HTTPDataStringifier.swift */,
 				CC0810AC234E2077009DA29A /* HTTPJSONDataStringifier.swift */,
@@ -256,6 +271,9 @@
 				74AE68292328EF6700BE93C7 /* NetworkStackTypes.swift in Sources */,
 				742EA62E2326975D00163BE9 /* NetworkResponse.swift in Sources */,
 				742EA62D2326975D00163BE9 /* APIProvider.swift in Sources */,
+				74E07218234F0A1F00CC569D /* UpdatableEntity.swift in Sources */,
+				74E0721A234F0A4600CC569D /* CountedList.swift in Sources */,
+				74E07212234F035500CC569D /* DefaultsStorage.swift in Sources */,
 				742EA6312326975D00163BE9 /* RequestResultHandler.swift in Sources */,
 				CC0810AD234E2077009DA29A /* HTTPJSONDataStringifier.swift in Sources */,
 				742EA6302326975D00163BE9 /* CoreNetworkError.swift in Sources */,
@@ -265,6 +283,8 @@
 				742EA62C2326975D00163BE9 /* EncodableExtension.swift in Sources */,
 				CC0810AB234E1EE6009DA29A /* HTTPDataStringifier.swift in Sources */,
 				74AE68252328EE7300BE93C7 /* DAOTypes.swift in Sources */,
+				74E07214234F035F00CC569D /* Synchronizer.swift in Sources */,
+				74E07216234F059700CC569D /* KVStorageKeyContainer.swift in Sources */,
 				74AE68272328EEEB00BE93C7 /* ReachabilityTypes.swift in Sources */,
 				742EA6322326975D00163BE9 /* API.swift in Sources */,
 				742EA62F2326975D00163BE9 /* ServerError.swift in Sources */,
