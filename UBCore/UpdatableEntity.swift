@@ -7,7 +7,7 @@
 //
 
 
-struct UpdatableEntity<T: Decodable>: Decodable {
+public struct UpdatableEntity<T: Decodable>: Decodable {
     var delete: CountedList<String>?
     var update: CountedList<T>?
     var updateAt: String?

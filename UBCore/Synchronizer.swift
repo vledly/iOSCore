@@ -10,7 +10,7 @@
 /// Протокол с реализацией синхронизации данных модели `UpdatableEntity`, полученных с сервера, с локальным хранилищем.
 /// Использует `DefaultsStorage` для сохранения данных о времени последнего обновления сущностей.
 
-protocol Synchronizer {
+public protocol Synchronizer {
     associatedtype Entity: DAOEntity & Decodable
     var dao: CoreDAO<Entity> { get }
     var defaultsStorage: DefaultsStorage { get }
@@ -24,7 +24,7 @@ extension Synchronizer {
     ///   - entity: полученная с сервера `UpdatableEntity`.
     ///   - storageKey: Ключ `DefaultsStorage` для актуализации данных об обновлении сущеости.
     
-    func synchronize(entity: UpdatableEntity<Entity>, storageKey: KVStorageKeyContainer) throws {
+    public func synchronize(entity: UpdatableEntity<Entity>, storageKey: KVStorageKeyContainer) throws {
         
         do {
             if let itemsToUpdate = entity.update?.items {
@@ -53,7 +53,7 @@ extension Synchronizer {
     /// - Parameters:
     ///   - storageKey: Ключ `DefaultsStorage` для актуализации данных об обновлении сущеости.
     
-    func erase(storageKey: KVStorageKeyContainer) throws {
+    public func erase(storageKey: KVStorageKeyContainer) throws {
         defaultsStorage.delete(storageKey)
         try dao.erase()
     }
