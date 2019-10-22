@@ -1,13 +1,13 @@
 //
 //  CountedList.swift
-//  Models
+//  UBCore
 //
-//  Created by Леван Чикваидзе on 05/09/2019.
+//  Created by Леван Чикваидзе on 21.10.2019.
 //  Copyright © 2019 UnitBean. All rights reserved.
 //
 
 
-public struct CountedList<T: Decodable>: Decodable {
-    public var count: Int? = 0
-    public var items: [T]? = []
+public class CountedList<T> {
+    public var count: Int = 0
+    public var items: [T] = []
 }

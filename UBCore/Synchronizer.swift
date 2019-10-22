@@ -11,7 +11,7 @@
 /// Использует `DefaultsStorage` для сохранения данных о времени последнего обновления сущностей.
 
 public protocol Synchronizer {
-    associatedtype Entity: DAOEntity & Decodable
+    associatedtype Entity: DAOEntity 
     var dao: CoreDAO<Entity> { get }
     var defaultsStorage: DefaultsStorage { get }
 }

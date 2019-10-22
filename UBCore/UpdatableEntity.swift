@@ -1,14 +1,14 @@
 //
 //  UpdatableEntity.swift
-//  Business
+//  UBCore
 //
-//  Created by Леван Чикваидзе on 26/09/2019.
+//  Created by Леван Чикваидзе on 21.10.2019.
 //  Copyright © 2019 UnitBean. All rights reserved.
 //
 
 
-public struct UpdatableEntity<T: Decodable>: Decodable {
-    var delete: CountedList<String>?
-    var update: CountedList<T>?
-    var updateAt: String?
+public class UpdatableEntity<T: DAOEntity> {
+    public var update: CountedList<T>?
+    public var delete: CountedList<String>?
+    public var updateAt: String?
 }
