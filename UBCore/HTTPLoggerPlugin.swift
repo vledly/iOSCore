@@ -29,7 +29,7 @@ extension HTTPLoggerPlugin: PluginType {
     ) {
         let log = logHTTPRequest(request, for: target)
 
-        print(log)
+        log.forEach { print($0) }
     }
 
     public func didReceive(
@@ -47,7 +47,7 @@ extension HTTPLoggerPlugin: PluginType {
             log = logHTTPError(error, forTarget: target)
         }
 
-        print(log)
+        log.forEach { print($0) }
     }
 
 }
