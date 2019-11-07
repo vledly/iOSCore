@@ -9,4 +9,7 @@ target 'UBCore' do
 	pod 'ReachabilitySwift', '4.3.0'
   pod 'DAO/Realm'
 
+  target 'UBCoreTests' do
+  end
+
 end
