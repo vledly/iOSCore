@@ -15,7 +15,7 @@ public struct HTTPJSONDataStringifier {
     private let writeOptions: JSONSerialization.WritingOptions
     private let encoding: String.Encoding
 
-    init(
+    public init(
         readOptions: JSONSerialization.ReadingOptions = [],
         writeOptions: JSONSerialization.WritingOptions = [],
         encoding: String.Encoding = .utf8
