@@ -13,7 +13,7 @@ public final class HTTPLoggerPlugin {
 
     private let stringifier: HTTPDataStringifier
 
-    init(
+    public init(
         stringifier: HTTPDataStringifier
     ) {
         self.stringifier = stringifier
