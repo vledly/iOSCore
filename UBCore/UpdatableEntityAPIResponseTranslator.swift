@@ -9,6 +9,8 @@
 
 public final class UpdatableEntityAPIResponseTranslator<Response: Decodable, Entity: DAOEntity> {
     
+    public required init() {}
+    
     public func fill(
         _ entity: inout UpdatableEntity<Entity>,
         from dto: UpdatableResponse<Response>,

@@ -7,14 +7,16 @@
 //
 
 
-public class APIResponseTranslator<Response: Decodable, Entity: DAOEntity> {
+open class APIResponseTranslator<Response: Decodable, Entity: DAOEntity> {
         
-    public func fill(
+    required public init() {}
+    
+    open func fill(
         _ entity: Entity,
         from dto: Response
     ) throws {}
     
-    public func fill(
+    open func fill(
         _ entities: inout [Entity],
         from dtos: [Response]
     ) throws {}

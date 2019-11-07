@@ -7,7 +7,10 @@
 //
 
 
-public class UpdatableEntity<T: DAOEntity> {
+public struct UpdatableEntity<T: DAOEntity> {
+    
+    public init() {}
+    
     public var update: CountedList<T>?
     public var delete: CountedList<String>?
     public var updateAt: String?

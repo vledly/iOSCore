@@ -8,6 +8,10 @@
 
 
 public class CountedList<T> {
-    public var count: Int = 0
+    
+    public var count: Int?
     public var items: [T] = []
+    
+    public init() {}
+    
 }
