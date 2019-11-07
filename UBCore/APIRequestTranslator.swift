@@ -7,9 +7,11 @@
 //
 
 
-public class APIRequestTranslator<Request: Encodable, Entity: DAOEntity> {
+open class APIRequestTranslator<Request: Encodable, Entity: DAOEntity> {
     
-    public func fill(
+    public required init() {}
+    
+    open func fill(
         _ dto: inout Request,
         from entity: Entity
     ) {}

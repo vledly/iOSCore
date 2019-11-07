@@ -15,7 +15,7 @@ public class CountedListAPIResponseTranslator<Response: Decodable, Entity: DAOEn
         entityTranslator: APIResponseTranslator<Response, Entity>
     ) throws {
         
-        entity.count = dto.count ?? 0
+        entity.count = dto.count
         
         if let items = dto.items {
             try entityTranslator.fill(&entity.items, from: items)
