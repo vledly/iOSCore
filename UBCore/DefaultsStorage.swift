@@ -15,7 +15,7 @@ public class DefaultsStorage {
     /// Shared instance для key-value хранилища, предоставляемого Apple's Foundation.
     /// Ссылка на документацию:
     /// https://developer.apple.com/documentation/foundation/userdefaults (Cmd + click)
-    private let userDefaults = UserDefaults.standard
+    private let userDefaults: UserDefaults
     
     
     /// Добавляет значение в хранилище
@@ -69,13 +69,17 @@ public class DefaultsStorage {
         return userDefaults.object(forKey: keyString) as? T
     }
     
-    func delete(_ keyContainer: KVStorageKeyContainer) {
+    public func delete(_ keyContainer: KVStorageKeyContainer) {
         userDefaults.set(
             .none,
             forKey: keyContainer.keyForValue()
         )
     }
     
-    public init() {}
+    public init(
+        userDefaults: UserDefaults = .standard
+    ) {
+        self.userDefaults = userDefaults
+    }
     
 }

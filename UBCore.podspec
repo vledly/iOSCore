@@ -10,7 +10,7 @@ Pod::Spec.new do |spec|
 
   spec.name         = "UBCore"
 
-  spec.version      = "1.1.4"
+  spec.version      = "1.1.5"
 
   spec.summary      = "UnitBean iOS Core Framework."
   
@@ -34,7 +34,7 @@ Pod::Spec.new do |spec|
 
   spec.framework = "Foundation"
 
-  spec.dependency 'Moya', '~> 14.0.0-alpha.2'
+  spec.dependency 'Moya', '~> 14.0.0-alpha.5'
   
   spec.dependency 'ReachabilitySwift', '4.3.0'
   
