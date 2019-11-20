@@ -32,8 +32,8 @@ extension RequestResultHandler {
                 handleDomainErrors(errors: errors) {
                     completion(.failure($0))
                 }
-            default: break
-                
+            default:
+                completion(.failure(CoreNetworkError.unknown))
             }
         case let .failure(error):
             completion(.failure(error))
