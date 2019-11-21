@@ -8,7 +8,13 @@
 
 
 public struct ServerError: Decodable {
-    public let domain  : String = ""
-    public let details : String = ""
-    public var message : String = "Произошла ошибка"
+
+    public struct PresentationData: Decodable {
+        public let title    : String
+        public let message  : String
+    }
+
+    public let domain           : String = ""
+    public let details          : String = ""
+    public let presentationData : PresentationData = PresentationData(title: "", message: "")
 }
