@@ -12,7 +12,7 @@ import Reachability
 public struct APIProvider<EndPointType: TargetType> {
     
     private let provider: MoyaProvider<EndPointType>
-    private let reachability: Reachability? = Reachability()
+    private let reachability: Reachability? = try? Reachability()
     
     public init(
         provider: MoyaProvider<EndPointType>
