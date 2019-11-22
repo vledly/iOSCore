@@ -6,7 +6,7 @@ inhibit_all_warnings!
 
 target 'UBCore' do
 
-	pod 'Moya', '~> 14.0.0-alpha.5'
+	pod 'Moya', '14.0.0-beta.5'
 	pod 'ReachabilitySwift', '~> 5.0'
   pod 'DAO/Realm'
 

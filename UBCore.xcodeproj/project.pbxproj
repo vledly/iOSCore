@@ -44,6 +44,7 @@
 		CC0810AD234E2077009DA29A /* HTTPJSONDataStringifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0810AC234E2077009DA29A /* HTTPJSONDataStringifier.swift */; };
 		CC09BF0D2374300C003652BD /* UBCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 742EA60E2326962B00163BE9 /* UBCore.framework */; };
 		CC09BF1423743056003652BD /* HTTPJSONDataStringifierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC09BF1323743056003652BD /* HTTPJSONDataStringifierTests.swift */; };
+		CCD9B4D92388116600EA919C /* CoreAuthError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD9B4D82388116600EA919C /* CoreAuthError.swift */; };
 		F1C9F4A9C3304F786B159051 /* Pods_UBCore_UBCoreTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24759A0C2BC8B389F34F45E9 /* Pods_UBCore_UBCoreTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -102,6 +103,7 @@
 		CC09BF082374300C003652BD /* UBCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UBCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC09BF0C2374300C003652BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC09BF1323743056003652BD /* HTTPJSONDataStringifierTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPJSONDataStringifierTests.swift; sourceTree = "<group>"; };
+		CCD9B4D82388116600EA919C /* CoreAuthError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreAuthError.swift; sourceTree = "<group>"; };
 		F86A9C4DE175FD59C5722AB2 /* Pods-UBCore-UBCoreTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UBCore-UBCoreTests.debug.xcconfig"; path = "Target Support Files/Pods-UBCore-UBCoreTests/Pods-UBCore-UBCoreTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -195,6 +197,7 @@
 				74F964AE235E0CFA00B1438D /* APIRequestTranslator.swift */,
 				74F964AA235E0B1D00B1438D /* UpdatableEntityAPIResponseTranslator.swift */,
 				74F964B0235E15A700B1438D /* CountedListAPIResponseTranslator.swift */,
+				CCD9B4D82388116600EA919C /* CoreAuthError.swift */,
 			);
 			path = UBCore;
 			sourceTree = "<group>";
@@ -416,6 +419,7 @@
 				CC0810A7234E0C48009DA29A /* JSONSerializationExtension.swift in Sources */,
 				CC0810A9234E134C009DA29A /* HTTPLoggerPlugin.swift in Sources */,
 				742EA62C2326975D00163BE9 /* EncodableExtension.swift in Sources */,
+				CCD9B4D92388116600EA919C /* CoreAuthError.swift in Sources */,
 				74F964B1235E15A700B1438D /* CountedListAPIResponseTranslator.swift in Sources */,
 				CC0810AB234E1EE6009DA29A /* HTTPDataStringifier.swift in Sources */,
 				74AE68252328EE7300BE93C7 /* DAOTypes.swift in Sources */,
@@ -591,7 +595,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.7;
+				MARKETING_VERSION = 1.2.0;
 				MODULEMAP_FILE = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.unitbean.Core;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -620,7 +624,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.7;
+				MARKETING_VERSION = 1.2.0;
 				MODULEMAP_FILE = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.unitbean.Core;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
