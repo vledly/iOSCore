@@ -12,7 +12,7 @@ import Reachability
 public struct APIProvider<EndPointType: TargetType> {
     
     private let provider: MoyaProvider<EndPointType>
-    private let reachability: Reachability? = Reachability()
+    private let reachability: Reachability? = try? Reachability()
     
     public init(
         provider: MoyaProvider<EndPointType>
@@ -84,6 +84,10 @@ public struct APIProvider<EndPointType: TargetType> {
         completion: @escaping (Result<ResponseType, Error>) -> Void
     ) {
         switch data.statusCode {
+        case 401:
+            completion(.failure(CoreAuthError.unauthorized))
+        case 403:
+            completion(.failure(CoreAuthError.forbidden))
         case 400...499:
             guard
                 let responseModel = try? data.map(ResponseType.self)
