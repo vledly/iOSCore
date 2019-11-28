@@ -8,7 +8,7 @@
 
 
 public protocol RequestResultHandler {
-    
+
     func handleDomainErrors(
         errors: [ServerError],
         completion: (Error) -> Void

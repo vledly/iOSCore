@@ -84,10 +84,6 @@ public struct APIProvider<EndPointType: TargetType> {
         completion: @escaping (Result<ResponseType, Error>) -> Void
     ) {
         switch data.statusCode {
-        case 401:
-            completion(.failure(CoreAuthError.unauthorized))
-        case 403:
-            completion(.failure(CoreAuthError.forbidden))
         case 400...499:
             guard
                 let responseModel = try? data.map(ResponseType.self)
