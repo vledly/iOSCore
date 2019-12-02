@@ -14,7 +14,8 @@ public struct ServerError: Decodable {
         public let message  : String
     }
 
-    public let domain           : String = ""
-    public let details          : String = ""
-    public let presentationData : PresentationData = PresentationData(title: "", message: "")
+    public let domain           : String
+    public let details          : String
+    public let presentationData : PresentationData
+    
 }
