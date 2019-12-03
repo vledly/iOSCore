@@ -10,7 +10,7 @@
 public struct ServerError: Decodable {
 
     public struct PresentationData: Decodable {
-        public let title    : String
+        public let title    : String?
         public let message  : String
     }
 
