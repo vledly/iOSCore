@@ -10,13 +10,12 @@ import DAO
 import RealmSwift
 
 
-public typealias CoreDAO<Entity: Entity> = DAO<Entity>
+public typealias CoreDAO<DEntity: Entity> = DAO<DEntity>
 public typealias CoreDAOImpl = RealmDAO
-public typealias DAOTranslator<Entity: Entity, Entry: RLMEntry> = RealmTranslator<Entity, Entry>
+public typealias DAOTranslator<DEntity: Entity, Entry: RLMEntry> = RealmTranslator<DEntity, Entry>
 public typealias DAOEntity = Entity
 public typealias DAOEntry = RLMEntry
 
 // MARK: - Realm
-
 public typealias DBList = List
 public typealias DBOptional = RealmOptional
