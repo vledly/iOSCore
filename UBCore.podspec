@@ -22,9 +22,9 @@ Pod::Spec.new do |spec|
 
   spec.author             = { "Levan Chikvaidze" => "levan.chikvaidze@unitbean.com" }
   
-  spec.platform     = :ios, "10.0"
+  spec.platform     = :ios, "11.0"
 
-  spec.source =  { :git => 'https://github.com/unitbean/iOSCore.git', :tag => spec.version }
+  spec.source =  { :git => 'https://github.com/vledly/iOSCore.git', :tag => spec.version }
 
   spec.source_files  = "UBCore", "UBCore/*.{swift,h,m}"
 
